@@ -1,10 +1,12 @@
 use std::env;
 
+mod utils;
 mod d1p1;
 mod d1p2;
 mod d2p1;
 mod d2p2;
-mod utils;
+mod d3p1;
+mod d3p2;
 
 fn main() {
     let args: Vec<String> = env::args().collect();
@@ -28,6 +30,8 @@ fn main() {
         (1, 2) => d1p2::run(),
         (2, 1) => d2p1::run(),
         (2, 2) => d2p2::run(),
+        (3,1) => d3p1::run(),
+        (3,2) => d3p2::run(),
         _ => {
             println!("Not yet implemented");
             std::process::exit(2);
