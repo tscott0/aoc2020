@@ -1,6 +1,5 @@
 use std::env;
 
-mod utils;
 mod d1p1;
 mod d1p2;
 mod d2p1;
@@ -11,6 +10,9 @@ mod d4p1;
 mod d4p2;
 mod d5p1;
 mod d5p2;
+mod d6p1;
+mod d6p2;
+mod utils;
 
 fn main() {
     let args: Vec<String> = env::args().collect();
@@ -34,17 +36,17 @@ fn main() {
         (1, 2) => d1p2::run(),
         (2, 1) => d2p1::run(),
         (2, 2) => d2p2::run(),
-        (3,1) => d3p1::run(),
-        (3,2) => d3p2::run(),
-        (4,1) => d4p1::run(),
-        (4,2) => d4p2::run(),
-        (5,1) => d5p1::run(),
-        (5,2) => d5p2::run(),
+        (3, 1) => d3p1::run(),
+        (3, 2) => d3p2::run(),
+        (4, 1) => d4p1::run(),
+        (4, 2) => d4p2::run(),
+        (5, 1) => d5p1::run(),
+        (5, 2) => d5p2::run(),
+        (6, 1) => d6p1::run(),
+        (6, 2) => d6p2::run(),
         _ => {
             println!("Not yet implemented");
             std::process::exit(2);
-        },
+        }
     }
 }
-
-
