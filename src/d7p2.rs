@@ -15,11 +15,6 @@ struct Bag {
     name: String,
 }
 
-struct ContainBag {
-    contains: Vec<Bag>,
-    name: String,
-}
-
 pub fn solve(input: String) -> usize {
     let clean_re = Regex::new(r" (bag[s]?[,.]?|contain|no other)").unwrap();
 

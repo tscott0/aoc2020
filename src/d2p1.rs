@@ -1,5 +1,4 @@
 use crate::utils::string_from_file;
-use itertools::Itertools;
 
 pub fn run() {
     let input = string_from_file("src/02input");

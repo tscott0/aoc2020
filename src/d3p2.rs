@@ -1,4 +1,3 @@
-use itertools::Itertools;
 
 use crate::d3p1::slope;
 use crate::utils::string_from_file;

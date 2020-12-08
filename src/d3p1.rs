@@ -9,7 +9,6 @@ pub fn run() {
 
 pub fn slope(input: String, right: usize, down: usize) -> usize {
     let width = input.lines().next().unwrap().len();
-    let height = input.lines().count();
 
     let grid = input.lines().flat_map(|l| l.trim().chars()).collect_vec();
 
@@ -35,8 +34,6 @@ pub fn slope(input: String, right: usize, down: usize) -> usize {
             answer += 1;
         }
     }
-
-    0
 }
 
 #[test]

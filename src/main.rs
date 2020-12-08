@@ -14,6 +14,8 @@ mod d6p1;
 mod d6p2;
 mod d7p1;
 mod d7p2;
+mod d8p1;
+mod d8p2;
 mod utils;
 
 fn main() {
@@ -48,6 +50,8 @@ fn main() {
         (6, 2) => d6p2::run(),
         (7, 1) => d7p1::run(),
         (7, 2) => d7p2::run(),
+        (8, 1) => d8p1::run(),
+        (8, 2) => d8p2::run(),
         _ => {
             println!("Not yet implemented");
             std::process::exit(2);
