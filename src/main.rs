@@ -25,6 +25,7 @@ fn main() {
 
     if args[1..].len() != 2 {
         println!("Usage: aoc2020 <day> <part>");
+        std::process::exit(1)
     }
 
     let day = args[1].parse::<i32>().unwrap();
@@ -32,7 +33,7 @@ fn main() {
 
     if day < 1 || day > 25 || part < 1 || part > 2 {
         println!("Day must be 1-25 and part must be 1 or 2");
-        std::process::exit(1)
+        std::process::exit(2)
     }
 
     println!("Day {:?} Part {:?}", day, part);
