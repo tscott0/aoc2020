@@ -24,6 +24,8 @@ mod d11p1;
 mod d11p2;
 mod d12p1;
 mod d12p2;
+mod d13p1;
+mod d13p2;
 mod utils;
 
 fn main() {
@@ -69,6 +71,8 @@ fn main() {
         (11, 2) => d11p2::run(),
         (12, 1) => d12p1::run(),
         (12, 2) => d12p2::run(),
+        (13, 1) => d13p1::run(),
+        (13, 2) => d13p2::run(),
         _ => {
             println!("Not yet implemented");
             std::process::exit(2);
