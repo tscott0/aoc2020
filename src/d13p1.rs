@@ -32,7 +32,6 @@ pub fn solve(input: String) -> usize {
         }
 
         ts = ts + 1;
-        // println!("incrementing {}", ts);
     }
 }
 
@@ -41,6 +40,5 @@ fn example_1() {
     let input = "939
     7,13,x,x,59,x,31,19";
 
-    // 7 * 5 = 35
     assert_eq!(solve(input.to_string()), 295);
 }

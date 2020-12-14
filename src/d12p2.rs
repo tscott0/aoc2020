@@ -106,6 +106,5 @@ fn example_1() {
     R90
     F11";
 
-    // 7 * 5 = 35
     assert_eq!(solve(input.to_string()), 286);
 }

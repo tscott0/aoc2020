@@ -164,6 +164,5 @@ fn example_1() {
     L.LLLLLL.L
     L.LLLLL.LL";
 
-    // 7 * 5 = 35
     assert_eq!(solve(input.to_string()), 37);
 }
