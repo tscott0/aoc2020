@@ -70,6 +70,5 @@ fn example_1() {
     mask = 00000000000000000000000000000000X0XX
     mem[26] = 1";
 
-    // 7 * 5 = 35
     assert_eq!(solve(input.to_string()), 208);
 }

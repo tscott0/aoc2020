@@ -81,6 +81,7 @@ fn mod_inv(x: i64, n: i64) -> Option<i64> {
 }
 
 // Keeping this solution as it works for smaller examples
+#[allow(dead_code)]
 pub fn solve_brute(input: String) -> usize {
     let mut lines_iter = input.lines().map(|l| l.trim());
     lines_iter.next();

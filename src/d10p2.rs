@@ -1,6 +1,3 @@
-use petgraph::dot::{Config, Dot};
-use std::fs::File;
-use std::io::Write;
 
 use crate::utils::string_from_file;
 use petgraph::graph::{Graph, NodeIndex};
@@ -14,6 +11,7 @@ pub fn run() {
 
 // Keeping this solution as it works but it's inefficient because it calculates a Vec of all
 // paths, which grows to over 24 trillion. Walking the graph is more efficient.
+#[allow(dead_code)]
 pub fn solve_inefficiently(input: String) -> usize {
     let mut adapters = input
         .lines()
