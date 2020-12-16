@@ -1,5 +1,19 @@
 use std::env;
 
+mod d10p1;
+mod d10p2;
+mod d11p1;
+mod d11p2;
+mod d12p1;
+mod d12p2;
+mod d13p1;
+mod d13p2;
+mod d14p1;
+mod d14p2;
+mod d15p1;
+mod d15p2;
+mod d16p1;
+mod d16p2;
 mod d1p1;
 mod d1p2;
 mod d2p1;
@@ -18,18 +32,6 @@ mod d8p1;
 mod d8p2;
 mod d9p1;
 mod d9p2;
-mod d10p1;
-mod d10p2;
-mod d11p1;
-mod d11p2;
-mod d12p1;
-mod d12p2;
-mod d13p1;
-mod d13p2;
-mod d14p1;
-mod d14p2;
-mod d15p1;
-mod d15p2;
 mod utils;
 
 fn main() {
@@ -81,6 +83,8 @@ fn main() {
         (14, 2) => d14p2::run(),
         (15, 1) => d15p1::run(),
         (15, 2) => d15p2::run(),
+        (16, 1) => d16p1::run(),
+        (16, 2) => d16p2::run(),
         _ => {
             println!("Not yet implemented");
             std::process::exit(2);
