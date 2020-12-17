@@ -14,6 +14,8 @@ mod d15p1;
 mod d15p2;
 mod d16p1;
 mod d16p2;
+mod d17p1;
+mod d17p2;
 mod d1p1;
 mod d1p2;
 mod d2p1;
@@ -85,6 +87,8 @@ fn main() {
         (15, 2) => d15p2::run(),
         (16, 1) => d16p1::run(),
         (16, 2) => d16p2::run(),
+        (17, 1) => d17p1::run(),
+        (17, 2) => d17p2::run(),
         _ => {
             println!("Not yet implemented");
             std::process::exit(2);
