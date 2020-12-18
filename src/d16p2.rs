@@ -1,4 +1,4 @@
-use std::collections::{HashMap, HashSet};
+use std::collections::HashMap;
 
 use crate::utils::string_from_file;
 
@@ -87,7 +87,7 @@ pub fn solve(input: String) -> usize {
             let mut rc = rules.clone();
             let matching_rules = rc
                 .iter_mut()
-                .filter(|(r, bound_pairs)| {
+                .filter(|(_, bound_pairs)| {
                     valid_tickets.iter().map(|&values| values[*i]).all(|v| {
                         let in_bounds = bound_pairs
                             .iter()
