@@ -18,10 +18,12 @@ mod d17p1;
 mod d17p2;
 mod d18p1;
 mod d18p2;
-mod d21p1;
-mod d21p2;
 mod d1p1;
 mod d1p2;
+mod d21p1;
+mod d21p2;
+mod d22p1;
+mod d22p2;
 mod d2p1;
 mod d2p2;
 mod d3p1;
@@ -95,9 +97,11 @@ fn main() {
         (17, 2) => d17p2::run(),
         (18, 1) => d18p1::run(),
         (18, 2) => d18p2::run(),
-        // 
+        //
         (21, 1) => d21p1::run(),
         (21, 2) => d21p2::run(),
+        (22, 1) => d22p1::run(),
+        (22, 2) => d22p2::run(),
         _ => {
             println!("Not yet implemented");
             std::process::exit(2);
